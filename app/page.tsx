@@ -25,8 +25,8 @@ export default function Home() {
           </Button>
         </div>
       </div>
-      <section className="flex flex-col items-center pb-12">
-        <h2 className="text-center text-3xl leading-6 px-2 md:px-0">Thank you to our wonderful sponsors that support our team!</h2>
+      <section className="flex flex-col items-center pb-12 pt-8">
+        <h2 className="text-center text-3xl leading-6 px-2 md:px-0">Thank you to our wonderful sponsors!</h2>
         <div className="mt-8 flex flex-wrap justify-center items-center max-w-full sm:max-w-xl lg:max-w-4xl xl:max-w-7xl 2xl:max-w-full gap-8 lg:gap-12 2xl:gap-16 slider">
           <Marquee gradient={true}>
               <Image

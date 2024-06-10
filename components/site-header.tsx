@@ -28,7 +28,7 @@ export default function SiteHeader({ children }: PropsWithChildren) {
                             quality={100}
 
                         />
-                        <span className="font-bold sm:inline-block sm:text-5xl text-4xl">The Electronovas</span>
+                        <span className="font-bold sm:inline-block sm:text-5xl text-3xl">The Electronovas</span>
                     </a>
                     <nav className="flex items-center gap-6 text-sm"></nav>
                 </div>
