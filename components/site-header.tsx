@@ -19,7 +19,16 @@ export default function SiteHeader({ children }: PropsWithChildren) {
             <div className="container flex h-24 items-center">
                 <div className="mr-4 md:flex">
                     <a href="/" className="mr-6 flex items-center space -x-2">
-                        <span className="font-bold sm:inline-block sm:text-5xl text-4xl">Electronovas</span>
+                        <Image
+                            className="mr-5"
+                            src="/head.png"
+                            height={55}
+                            width={45}
+                            alt="Logo"
+                            quality={100}
+
+                        />
+                        <span className="font-bold sm:inline-block sm:text-5xl text-4xl">The Electronovas</span>
                     </a>
                     <nav className="flex items-center gap-6 text-sm"></nav>
                 </div>
