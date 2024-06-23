@@ -2,9 +2,9 @@ import Image from "next/image";
 import SiteHeader from "@/components/site-header";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Instagram, Facebook } from 'lucide-react';
 import Marquee from "react-fast-marquee";
-
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <SiteHeader />
       <div className="grid max-w-screen-xl px-4 py-4 md:py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="flex md:mt-10 lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="/team.png" alt="Team Picture" className="rounded-lg md:max-h-full px-12 py-5" />
+          <img src="/team.png" alt="Team Picture" className="rounded-md md:max-h-full px-12 py-5" />
         </div>
         <div className="mr-auto place-self-center lg:col-span-7">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">The Electronovas</h1>
@@ -27,7 +27,7 @@ export default function Home() {
       </div>
       <section className="flex flex-col items-center pb-12 pt-8">
         <h2 className="text-center text-3xl leading-6 px-2 md:px-0">Thank you to our wonderful sponsors!</h2>
-        <div className="mt-8 flex flex-wrap justify-center items-center max-w-full sm:max-w-xl lg:max-w-4xl xl:max-w-7xl 2xl:max-w-full gap-8 lg:gap-12 2xl:gap-16 slider">
+        <div className="mt-8 flex flex-wrap justify-center items-center gap-8 lg:gap-12 2xl:gap-16 slider max-w-7xl">
           <Marquee gradient={true}>
               <Image
                 src="/bechtel.jpg"
@@ -67,6 +67,7 @@ export default function Home() {
           </Marquee>
         </div>
       </section>
+      <Footer/>
     </main>
   );
 }
